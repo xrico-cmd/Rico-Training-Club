@@ -1,0 +1,510 @@
+/* =========================================
+   RICO TRAINING CLUB
+   CSS PERSONALIZADO
+   ========================================= */
+
+
+/* ---------- GENERAL ---------- */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #181818;
+}
+
+section {
+    overflow: hidden;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    background-color: #111111;
+    padding: 18px 0;
+    transition: 0.3s;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.navbar-brand span {
+    font-weight: 400;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin-left: 12px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #d4ff00 !important;
+}
+
+
+/* ---------- BOTONES ---------- */
+
+.btn-primary-custom {
+    background-color: #d4ff00;
+    border: 2px solid #d4ff00;
+    color: #111111;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px 22px;
+    transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background-color: #bde600;
+    border-color: #bde600;
+    color: #111111;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #ffffff;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-subtitle {
+    color: #d4ff00;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 900;
+    line-height: 0.95;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d4ff00;
+}
+
+.hero-text {
+    max-width: 600px;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* ---------- SECCIONES ---------- */
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title p {
+    color: #777777;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.title-line {
+    width: 60px;
+    height: 5px;
+    background-color: #d4ff00;
+    margin: 0 auto;
+}
+
+.section-description {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: #666666;
+}
+
+
+/* ---------- CARDS DE CLASES ---------- */
+
+.class-card {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.class-card:hover {
+    transform: translateY(-8px);
+}
+
+.class-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d4ff00;
+    color: #111111;
+
+    border-radius: 50%;
+    font-size: 1.7rem;
+    margin: 20px;
+}
+
+.class-card h3 {
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.class-card p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+.class-card ul {
+    padding-left: 20px;
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+.class-card li {
+    margin-bottom: 7px;
+}
+
+
+/* ---------- HORARIOS ---------- */
+
+.schedule-section {
+    background-color: #f4f4f4;
+}
+
+.schedule-table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.schedule-table thead {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 18px;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #f7ffd9;
+}
+
+.available {
+    background-color: #d4ff00;
+    color: #111111;
+    padding: 8px 12px;
+}
+
+.full {
+    background-color: #dddddd;
+    color: #555555;
+    padding: 8px 12px;
+}
+
+
+/* ---------- TIENDA ---------- */
+
+.pricing-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+}
+
+.pricing-card h3 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.pricing-card p {
+    color: #666666;
+}
+
+.pricing-card hr {
+    margin: 25px 0;
+}
+
+.pricing-card i {
+    color: #8eab00;
+}
+
+.popular {
+    border: 3px solid #d4ff00;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #d4ff00;
+    color: #111111;
+
+    padding: 6px 15px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+
+/* ---------- EJERCICIOS ---------- */
+
+.exercises-section {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.exercises-section .section-title p {
+    color: #d4ff00;
+}
+
+.exercises-section .section-description {
+    color: #bbbbbb;
+}
+
+.exercise-card {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.exercise-card:hover {
+    border-color: #d4ff00;
+    transform: translateY(-5px);
+}
+
+.exercise-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 25px;
+
+    border-radius: 50%;
+    background-color: #d4ff00;
+    color: #111111;
+
+    font-size: 1.5rem;
+}
+
+.exercise-card h3 {
+    font-weight: bold;
+}
+
+.exercise-card p {
+    color: #bbbbbb;
+    line-height: 1.6;
+}
+
+.exercise-badge {
+    background-color: #333333;
+    color: #ffffff;
+    margin-right: 5px;
+    padding: 7px 10px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #080808;
+    color: #ffffff;
+    padding: 50px 0 25px;
+}
+
+footer h3 {
+    font-weight: 900;
+}
+
+footer p {
+    color: #aaaaaa;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d4ff00;
+}
+
+
+/* ---------- MODALES ---------- */
+
+.modal-content {
+    border: none;
+    border-radius: 12px;
+}
+
+.modal-header {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.reservation-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.reservation-info p {
+    margin-bottom: 8px;
+}
+
+.purchase-icon {
+    font-size: 4rem;
+    color: #8eab00;
+    margin-bottom: 15px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        padding-top: 15px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0 !important;
+    }
+
+    .navbar .btn {
+        margin-top: 10px;
+    }
+
+    .hero {
+        background-attachment: scroll;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+
+    .schedule-table .btn {
+        padding: 7px 10px;
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        letter-spacing: 2px;
+    }
+
+    .hero .btn {
+        width: 100%;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+}
